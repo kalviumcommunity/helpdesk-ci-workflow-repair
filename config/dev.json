@@ -1,0 +1,5 @@
+{
+  "serviceName": "HelpDesk",
+  "environment": "development",
+  "debug": true
+}

@@ -1,0 +1,10 @@
+const assert = require('node:assert/strict');
+const dev = require('../config/dev.json');
+const prod = require('../config/prod.json');
+assert.equal(dev.serviceName, 'HelpDesk');
+assert.equal(dev.environment, 'development');
+assert.equal(dev.debug, true);
+assert.equal(prod.serviceName, 'HelpDesk');
+assert.equal(prod.environment, 'production', 'production environment must be production');
+assert.equal(prod.debug, false, 'production debug must be false');
+console.log('PASS: development unchanged; production environment and debug match contract');

@@ -1,0 +1,9 @@
+{
+  "name": "helpdesk-ci-workflow-repair",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "check:config": "node scripts/check-config.js",
+    "test": "node --test"
+  }
+}
